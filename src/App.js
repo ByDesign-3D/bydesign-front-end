@@ -1,12 +1,16 @@
+import { Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-
+import GlobalStyle from "./styles/global";
 
 function App() {
     return (
         <div className="App">
+          <GlobalStyle/>
             <Navbar />
-            <h1>Design 3d</h1>
+            <div>
+                <h1>Design 3dwrgergrgr</h1>
+            </div>
         </div>
     );
 }
