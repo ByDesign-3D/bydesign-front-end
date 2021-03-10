@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-
 export const Nav = styled.nav`
     height: 80px;
     background: black;
@@ -35,15 +34,13 @@ export const MenuBars = styled.i`
     }
 `;
 
-
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
     margin-right: -48px;
 
-
-    @media screen and (max-width: 768px){
-        display:none;
+    @media screen and (max-width: 768px) {
+        display: none;
     }
 `;
 
@@ -57,5 +54,3 @@ export const MenuLinks = styled(Link)`
     cursor: pointer;
     text-decoration: none;
 `;
-
-

@@ -6,7 +6,7 @@ import {
     MenuBars,
     NavMenu,
     MenuLinks,
-} from "../styles/navigation/Nav";
+} from "../styles/navbar/Nav";
 import { Button, NavButton } from "./Button";
 import { IoMenu } from "react-icons/io5";
 
