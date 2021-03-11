@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
     height: 80px;
-    background: black;
+
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -15,7 +15,8 @@ export const Nav = styled.nav`
 export const Logo = styled(Link)`
     font-style: italic;
     font-weight: bold;
-    color: #fff;
+    font-size:1.5rem;
+    color:black;
     display: flex;
     align-items: center;
     padding: 0 1rem;
@@ -46,7 +47,7 @@ export const NavMenu = styled.div`
 
 export const MenuLinks = styled(Link)`
     font-weight: bold;
-    color: #fff;
+    color: ${({ primary }) => (primary ? "white" : "black")};;
     display: flex;
     align-items: center;
     padding: 0 1rem;

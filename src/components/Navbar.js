@@ -1,12 +1,6 @@
 import React from "react";
 import { menuData } from "../data/MenuData";
-import {
-    Nav,
-    Logo,
-    MenuBars,
-    NavMenu,
-    MenuLinks,
-} from "../styles/navbar/Nav";
+import { Nav, Logo, MenuBars, NavMenu, MenuLinks } from "../styles/navbar/Nav";
 import { Button, NavButton } from "./Button";
 import { IoMenu } from "react-icons/io5";
 
@@ -21,14 +15,14 @@ function Navbar() {
                 <NavMenu>
                     {menuData.map((item, idx) => {
                         return (
-                            <MenuLinks to={item.link} key={idx}>
+                            <MenuLinks primary="true" to={item.link} key={idx}>
                                 {item.title}
                             </MenuLinks>
                         );
                     })}
                 </NavMenu>
                 <NavButton>
-                    <Button primary={true} to="/contact">
+                    <Button primary="true" to="/contact">
                         Contact Us{" "}
                     </Button>
                 </NavButton>

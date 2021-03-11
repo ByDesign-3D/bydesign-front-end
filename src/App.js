@@ -10,7 +10,8 @@ function App() {
         <div className="App">
             <GlobalStyle />
             <Navbar />
-            <ImageSlider slides={SliderData} />
+            <Route exact path = "/"><ImageSlider slides={SliderData} /></Route>
+            
         </div>
     );
 }
