@@ -5,6 +5,7 @@ export const HeroSection = styled.section`
     max-height: 1100px;
     position: relative;
     overflow: hidden;
+    text-align: center;
 `;
 
 export const HeroWrapper = styled.div`
@@ -81,18 +82,21 @@ export const HeroContent = styled.div`
     max-width: 1600px;
     width: calc(100%-100px);
     color: white;
-
+   
     h1 {
         font-size: clamp(2rem, 12vw, 3rem);
-        font-weight:500;
-        text-transform:uppercase;
-        text-shadow:0px 0px 20px rgba(0,0,0,0.4);
-        text-align:left;
-        margin-bottom:0.8rem;
+        text-shadow:2px 2px 0px black;
+        font-weight: 700;
+        text-transform: uppercase;
+       
+        text-align: left;
+        margin-bottom: 0.8rem;
     }
 
-    p{
-        margin-bottom:1.2rem;
-        text-shadow:0px 0px 20px rgba(0,0,0,0.4);
+    p {
+        margin-bottom: 1.2rem;
+        font-size: clamp(0.3rem, 12vw, 1rem);
+        text-shadow:2px 2px 0px black;
+        font-weight:700;
     }
 `;

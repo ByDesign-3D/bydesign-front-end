@@ -3,12 +3,16 @@ import { menuData } from "../data/MenuData";
 import { Nav, Logo, MenuBars, NavMenu, MenuLinks } from "../styles/navbar/Nav";
 import { Button, NavButton } from "./Button";
 import { IoMenu } from "react-icons/io5";
+import image from "../images/temp_logo4.png";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
     return (
         <div>
             <Nav>
-                <Logo to="/">3D By Design</Logo>
+                <NavLink to="/">
+                    <Logo src={image} />
+                </NavLink>
                 <MenuBars>
                     <IoMenu style={{ color: "white" }} />
                 </MenuBars>

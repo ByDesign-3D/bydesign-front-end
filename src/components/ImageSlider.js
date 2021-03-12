@@ -11,6 +11,7 @@ import {
 } from "../styles/imageSlider/Hero";
 import { Button } from "./Button";
 import { IoPlaySharp, IoArrowForward, IoArrowBack } from "react-icons/io5";
+import faker from "faker";
 
 const Arrow = styled(IoPlaySharp)`
     margin-left: 0.5rem;
@@ -19,9 +20,9 @@ const Arrow = styled(IoPlaySharp)`
 const arrowButtons = css`
     width: 50px;
     height: 50px;
-    color: darkgrey;
+    color: white;
     border-radius: 50px;
-    background: #000d1a;
+    background: red;
     cursor: pointer;
     padding: 10px;
     margin-right: 1rem;
@@ -95,7 +96,8 @@ const ImageSlider = ({ slides }) => {
                                         alt={slide.alt}
                                     />
                                     <HeroContent>
-                                        <h1>{slide.title}</h1>
+                                        <h1>{faker.company.catchPhrase()}</h1>
+                                        <p>{faker.lorem.paragraph()}</p>
                                     </HeroContent>
                                 </HeroSlider>
                             )}

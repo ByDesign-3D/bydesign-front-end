@@ -12,7 +12,7 @@ export const NavButton = styled.div`
 `;
 
 export const Button = styled(Link)`
-    background: ${({ primary }) => (primary ? "#000d1a" : "CD853f")};
+    background: ${({ primary }) => (primary ? "red" : "CD853f")};
     white-space: nowrap;
     outline: none;
     border: none;

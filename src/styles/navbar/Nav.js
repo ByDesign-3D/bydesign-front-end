@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
     height: 80px;
-
+    background: black;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -12,15 +12,13 @@ export const Nav = styled.nav`
     width: 100%;
 `;
 
-export const Logo = styled(Link)`
-    font-style: italic;
-    font-weight: bold;
-    font-size:1.5rem;
-    color:black;
-    display: flex;
-    align-items: center;
+export const Logo = styled.img`
+    position:relative;
+    bottom:40%;
+    right:30%;
     padding: 0 1rem;
-    height: 100%;
+    height: 80px;
+    width: 250px;
     cursor: pointer;
 `;
 
@@ -38,7 +36,8 @@ export const MenuBars = styled.i`
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-right: -48px;
+    margin-left:50%;
+   
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -47,7 +46,7 @@ export const NavMenu = styled.div`
 
 export const MenuLinks = styled(Link)`
     font-weight: bold;
-    color: ${({ primary }) => (primary ? "white" : "black")};;
+    color: ${({ primary }) => (primary ? "white" : "black")};
     display: flex;
     align-items: center;
     padding: 0 1rem;
