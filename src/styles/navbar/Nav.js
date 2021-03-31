@@ -8,14 +8,14 @@ export const Nav = styled.nav`
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 100;
-    position: fixed;
+   
     width: 100%;
 `;
 
 export const Logo = styled.img`
-    position:relative;
-    bottom:40%;
-    right:30%;
+    position: relative;
+    bottom: 40%;
+    right: 30%;
     padding: 0 1rem;
     height: 80px;
     width: 250px;
@@ -36,8 +36,6 @@ export const MenuBars = styled.i`
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-left:50%;
-   
 
     @media screen and (max-width: 768px) {
         display: none;

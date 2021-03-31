@@ -4,6 +4,7 @@ export const LandingSection = styled.section`
     height: 100%;
     width: 100%;
     padding: 4rem 0rem;
+    margin-bottom: 5rem;
 `;
 
 export const LandingWrapper = styled.div`
@@ -43,6 +44,6 @@ export const RightSideContent = styled.div`
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 768px) {
-        order:2
+        order: 2;
     }
 `;

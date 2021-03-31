@@ -26,8 +26,13 @@ function Navbar() {
                     })}
                 </NavMenu>
                 <NavButton>
-                    <Button primary="true" to="/contact">
-                        Contact Us{" "}
+                    <Button
+                        short="true"
+                        round="true"
+                        primary="true"
+                        to="/sign-in"
+                    >
+                        Sign in{" "}
                     </Button>
                 </NavButton>
             </Nav>

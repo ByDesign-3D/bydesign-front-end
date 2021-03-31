@@ -6,6 +6,7 @@ export const HeroSection = styled.section`
     position: relative;
     overflow: hidden;
     text-align: center;
+    margin-bottom:3%;
 `;
 
 export const HeroWrapper = styled.div`
@@ -82,21 +83,21 @@ export const HeroContent = styled.div`
     max-width: 1600px;
     width: calc(100%-100px);
     color: white;
-   
+
     h1 {
         font-size: clamp(2rem, 12vw, 3rem);
-        text-shadow:2px 2px 0px black;
+        text-shadow: 2px 2px 0px black;
         font-weight: 700;
         text-transform: uppercase;
-       
-        text-align: left;
+
+        text-align: center;
         margin-bottom: 0.8rem;
     }
 
     p {
         margin-bottom: 1.2rem;
         font-size: clamp(0.3rem, 12vw, 1rem);
-        text-shadow:2px 2px 0px black;
-        font-weight:700;
+        text-shadow: 2px 2px 0px black;
+        font-weight: 700;
     }
 `;

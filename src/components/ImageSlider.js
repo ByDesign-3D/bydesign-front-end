@@ -48,19 +48,19 @@ const ImageSlider = ({ slides }) => {
     const length = slides.length;
     const timeout = useRef(null);
 
-    // useEffect(() => {
-    //     const next = () => {
-    //         setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1);
+    useEffect(() => {
+        const next = () => {
+            setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1);
 
-    //         console.log(currentSlide);
-    //     };
-    //     timeout.current = setTimeout(next, 3000);
-    //     return function () {
-    //         if (timeout.current) {
-    //             clearTimeout(timeout.current);
-    //         }
-    //     };
-    // }, [currentSlide, length]);
+            console.log(currentSlide);
+        };
+        timeout.current = setTimeout(next, 4000);
+        return function () {
+            if (timeout.current) {
+                clearTimeout(timeout.current);
+            }
+        };
+    }, [currentSlide, length]);
 
     const nextSlide = () => {
         if (timeout.current) {
