@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const HeroSection = styled.section`
-    height: 100vh;
-    max-height: 1100px;
+    height: 110vh;
+    max-height: 1200px;
     position: relative;
     overflow: hidden;
     text-align: center;
-    margin-bottom:3%;
 `;
 
 export const HeroWrapper = styled.div`
@@ -17,11 +16,12 @@ export const HeroWrapper = styled.div`
     align-items: center;
     overflow: hidden;
     position: relative;
+    bottom:100px;
 `;
 
 export const SliderButtons = styled.div`
     position: absolute;
-    bottom: 50px;
+    bottom: 250px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,7 @@ export const HeroSlider = styled.div`
         z-index: 2;
         width: 100%;
         height: 100vh;
-        bottom: 0vh;
+        bottom: 0;
         left: 0;
         overflow: hidden;
         opacity: 0.4;
@@ -83,13 +83,13 @@ export const HeroContent = styled.div`
     max-width: 1600px;
     width: calc(100%-100px);
     color: white;
-
+   
     h1 {
         font-size: clamp(2rem, 12vw, 3rem);
-        text-shadow: 2px 2px 0px black;
+        text-shadow:2px 2px 0px black;
         font-weight: 700;
         text-transform: uppercase;
-
+       
         text-align: center;
         margin-bottom: 0.8rem;
     }
@@ -97,7 +97,7 @@ export const HeroContent = styled.div`
     p {
         margin-bottom: 1.2rem;
         font-size: clamp(0.3rem, 12vw, 1rem);
-        text-shadow: 2px 2px 0px black;
-        font-weight: 700;
+        text-shadow:2px 2px 0px black;
+        font-weight:700;
     }
 `;

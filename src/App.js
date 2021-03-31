@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import ImageSlider from "./components/ImageSlider";
 import Navbar from "./components/Navbar";
@@ -16,14 +16,18 @@ function App() {
         <div className="App">
             <GlobalStyle />
             <Navbar />
-            <Route exact path="/">
-                <ImageSlider slides={SliderData} />
-                <Landing />
-            </Route>
-            <Route exact path="/services">
-                <Services />
-            </Route>
+            <Switch>
+                <Route exact path="/">
+                    <ImageSlider slides={SliderData} />
+                    <Landing />
+                </Route>
+                <Route exact path="/services">
+                    <Services />
+                </Route>
+            </Switch>
+            <h1>hey</h1>
             <Footer />
+            
         </div>
     );
 }

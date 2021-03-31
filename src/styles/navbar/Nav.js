@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 100;
-   
+
     width: 100%;
 `;
 
@@ -47,7 +47,7 @@ export const MenuLinks = styled(Link)`
     color: ${({ primary }) => (primary ? "white" : "black")};
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
     height: 100%;
     cursor: pointer;
     text-decoration: none;
