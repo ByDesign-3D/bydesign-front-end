@@ -10,8 +10,10 @@ const GlobalStyle = createGlobalStyle`
     
     html,body{
         overflow-x:hidden;
-       
+        
     }
+
+    
 
     .landing-img{
         box-shadow: 0 0 30px #333;

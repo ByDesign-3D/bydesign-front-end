@@ -38,6 +38,9 @@ export const LeftSideContent = styled.div`
 
     p {
         margin-bottom: 2rem;
+        font-size: clamp(0.3rem, 12vw, 1rem);
+        text-shadow:0.3px 0.3px 0.3px black;
+        font-weight:600;
     }
     @media screen and (max-width: 768px) {
         order: 2;
@@ -67,6 +70,7 @@ export const MiddleImage = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 30px #333;
+    
 
     &::before {
         opacity: 0.4;

@@ -29,7 +29,7 @@ export const Button = styled(Link)`
     padding: ${({ big }) => (big ? "16px 40px" : "14px 24px")};
     color: ${({ primary }) => (primary ? "#fff" : "000d1a")};
     font-size: ${({ big }) => (big ? "20px" : "14px")};
-    margin-left:2%;
+    margin-left:10px;
 
     &:hover {
         transform: translateY(-2px);

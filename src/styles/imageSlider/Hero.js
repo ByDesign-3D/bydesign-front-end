@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const HeroSection = styled.section`
-    height: 110vh;
-    max-height: 1200px;
+    height: 100vh;
+    max-height: 1100px;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -17,6 +17,7 @@ export const HeroWrapper = styled.div`
     overflow: hidden;
     position: relative;
     bottom:100px;
+    box-shadow: 0 0 30px #333 !important;
 `;
 
 export const SliderButtons = styled.div`
@@ -27,12 +28,16 @@ export const SliderButtons = styled.div`
     justify-content: space-between;
     width: 90%;
     z-index: 10;
+    @media screen and (max-width: 768px) {
+        bottom:100px;
+    }
 `;
 
 export const HeroSlide = styled.div`
     z-index: 1;
     height: 100%;
     width: 100%;
+    
 `;
 
 export const HeroSlider = styled.div`
@@ -44,7 +49,7 @@ export const HeroSlider = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     &::before {
         content: "";
         position: absolute;
@@ -73,6 +78,7 @@ export const HeroImage = styled.img`
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    
 `;
 
 export const HeroContent = styled.div`
@@ -92,12 +98,16 @@ export const HeroContent = styled.div`
        
         text-align: center;
         margin-bottom: 0.8rem;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom:1.2rem;
+    }
     }
 
     p {
         margin-bottom: 1.2rem;
         font-size: clamp(0.3rem, 12vw, 1rem);
-        text-shadow:2px 2px 0px black;
+        text-shadow:2px 2px 5px black;
         font-weight:700;
     }
 `;

@@ -36,7 +36,7 @@ export const MenuBars = styled.i`
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-
+    margin-right:5%;
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -45,9 +45,10 @@ export const NavMenu = styled.div`
 export const MenuLinks = styled(Link)`
     font-weight: bold;
     color: ${({ primary }) => (primary ? "white" : "black")};
+    font-size:1rem;
     display: flex;
     align-items: center;
-    padding: 0 2rem;
+    padding:${({ footer }) => (footer ? "0 0rem ": "0 2rem")};
     height: 100%;
     cursor: pointer;
     text-decoration: none;
