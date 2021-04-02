@@ -17,9 +17,13 @@ export const FooterContent = styled.div`
     align-items: center;
 
     p {
+        font-size:0.6rem;
+        margin-top:30px;
+        
         @media screen and (max-width: 768px) {
             margin-left: 44%;
-            font-size:0.7rem;
+            
+            font-size:0.5rem;
         }
     }
 `;

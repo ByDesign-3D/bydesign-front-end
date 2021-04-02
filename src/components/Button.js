@@ -18,18 +18,18 @@ export const Button = styled(Link)`
     border: none;
     min-width: 10px;
     max-width: 200px;
-    height:${({ short }) => (short ? "20px" : "40px")};
+    height: ${({ short }) => (short ? "20px" : "40px")};
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius:${({ round }) => (round ? "50px" : "0px")};
+    border-radius: ${({ round }) => (round ? "50px" : "0px")};
     padding: ${({ big }) => (big ? "16px 40px" : "14px 24px")};
     color: ${({ primary }) => (primary ? "#fff" : "000d1a")};
     font-size: ${({ big }) => (big ? "20px" : "14px")};
-    margin-left:10px;
+    margin-left: 10px;
 
     &:hover {
         transform: translateY(-2px);

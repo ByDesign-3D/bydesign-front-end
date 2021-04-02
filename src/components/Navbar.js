@@ -25,9 +25,11 @@ function Navbar() {
                         );
                     })}
                 </NavMenu>
-                
+
                 <NavButton>
-                <blockquote style = {{color:"white",fontSize:"0.7rem"}}>Current Customer?</blockquote>
+                    <blockquote style={{ color: "white", fontSize: "0.7rem" }}>
+                        Current Customer?
+                    </blockquote>
                     <Button
                         short="true"
                         round="true"

@@ -13,7 +13,7 @@ const Footer = () => {
                         return (
                             <MenuLinks
                                 footer="true"
-                                style={{ fontSize: "0.7rem", margin: "1rem" }}
+                                style={{ fontSize: "0.8rem", margin: "0.7rem" }}
                                 primary="true"
                                 to={item.link}
                                 key={idx}

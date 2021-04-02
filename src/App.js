@@ -7,6 +7,8 @@ import { SliderData } from "./data/SliderData";
 import Landing from "./components/Landing";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
+import SignIn from "./components/SignIn";
+import EmployeeSignIn from "./components/EmployeeSignIn";
 
 function App() {
     window.onbeforeunload = function () {
@@ -24,10 +26,15 @@ function App() {
                 <Route exact path="/services">
                     <Services />
                 </Route>
+                <Route exact path="/sign-in">
+                    <SignIn />
+                </Route>
+                <Route exact path="/employeePortal">
+                    <EmployeeSignIn />
+                </Route>
             </Switch>
-            <h1>hey</h1>
+
             <Footer />
-            
         </div>
     );
 }
