@@ -1,31 +1,40 @@
 import React from "react";
 import { menuData } from "../data/MenuData";
-import { Nav } from "../styles/navigation/nav";
-import { Logo } from "../styles/navigation/logo";
-import { MenuBars } from "../styles/navigation/menuBars";
-import { NavMenu } from "../styles/navigation/navMenu";
-import { MenuLinks } from "../styles/navigation/menuLinks";
+import { Nav, Logo, MenuBars, NavMenu, MenuLinks } from "../styles/navbar/Nav";
 import { Button, NavButton } from "./Button";
-import { IoMenu } from "react-icons/io5"
+import { IoMenu } from "react-icons/io5";
+import image from "../images/temp_logo4.png";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
     return (
         <div>
             <Nav>
-                <Logo to="/">3D By Design</Logo>
-                <MenuBars><IoMenu style = {{"color":"white"}} /></MenuBars>
+                <NavLink to="/">
+                    <Logo src={image} />
+                </NavLink>
+                <MenuBars>
+                    <IoMenu style={{ color: "white" }} />
+                </MenuBars>
                 <NavMenu>
                     {menuData.map((item, idx) => {
                         return (
-                            <MenuLinks to={item.link} key={idx}>
+                            <MenuLinks primary="true" to={item.link} key={idx}>
                                 {item.title}
                             </MenuLinks>
                         );
                     })}
                 </NavMenu>
+                
                 <NavButton>
-                    <Button primary={true} to="/contact">
-                        Contact Us{" "}
+                <blockquote style = {{color:"white",fontSize:"0.7rem"}}>Current Customer?</blockquote>
+                    <Button
+                        short="true"
+                        round="true"
+                        primary="true"
+                        to="/sign-in"
+                    >
+                        Sign in{" "}
                     </Button>
                 </NavButton>
             </Nav>
