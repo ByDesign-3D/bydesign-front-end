@@ -18,6 +18,10 @@ export const EmployeeSignInSection = styled.section`
         #1f1c18,
         #8e0e00
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    @media screen and (max-width: 768px) {
+        height: 125vh;
+    }
 `;
 
 export const PortalLogo = styled.img`
@@ -52,8 +56,10 @@ export const EmployeeForm = styled.form`
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     margin-top: 2rem;
-    p,label{
-        font-weight:600;
+    margin-bottom: 2rem;
+    p,
+    label {
+        font-weight: 600;
     }
     @media screen and (max-width: 768px) {
         width: 200px;
@@ -62,14 +68,11 @@ export const EmployeeForm = styled.form`
 
 export const EmployeeInput = styled.input`
     width: 100%;
-    border-bottom:2px solid black !important;
+    border-bottom: 2px solid black !important;
     ${sharedStyles}
-
-    
 `;
 
 export const TextArea = styled.textarea``;
-
 
 export const FieldSet = styled.fieldset``;
 export const Error = styled.div``;

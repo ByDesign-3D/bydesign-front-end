@@ -28,6 +28,34 @@ const GlobalStyle = createGlobalStyle`
         );
         }
     }
+
+    .scrollIcon{
+    position: fixed; 
+    width: 50px;
+    bottom: 150px;
+    right:100px;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: 0.4s;
+    color:white;
+    border-radius:5px;
+    background:red;
+  border:1px solid black;
+    &:hover{
+        background:black;
+        opacity:0.7;
+    }
+    @media screen and (max-width: 1100px) {
+        right:5px;
+        bottom:60px;
+        height:40px;
+        width:40px;
+  }
+    }
     
 
 `;

@@ -36,7 +36,7 @@ export const MenuBars = styled.i`
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-   
+
     @media screen and (max-width: 768px) {
         display: none;
     }

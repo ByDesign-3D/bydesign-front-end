@@ -16,17 +16,21 @@ const EmployeeSignIn = () => {
             <PortalLogo src={image} />
 
             <EmployeeForm>
-                <h2 style = {{marginBottom:"5%"}}>ByDesign Portal Sign-In</h2>
-                <br/>
+                <h2 style={{ marginBottom: "5%" }}>Employee Sign-In</h2>
+                <br />
                 <label htmlFor="username">Username:</label>
-                <EmployeeInput type="text" name="username" />
+                <EmployeeInput
+                    type="username"
+                    name="username"
+                    autocomplete="off"
+                />
                 <label htmlFor="password">Password:</label>
-                <EmployeeInput type="text" name="password" />
+                <EmployeeInput type="password" name="password" />
 
                 <Error>
                     <p>Error Message Here</p>
                 </Error>
-                <br/>
+                <br />
                 <Button primary="true">Submit</Button>
             </EmployeeForm>
         </EmployeeSignInSection>

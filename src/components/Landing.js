@@ -10,6 +10,9 @@ import faker from "faker";
 import { Button } from "./Button";
 import Bounce from "react-reveal/Bounce";
 
+
+
+
 const Landing = () => {
     return (
         <LandingSection>

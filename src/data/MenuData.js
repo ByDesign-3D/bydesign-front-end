@@ -34,8 +34,5 @@ export const footerMenu = [
         title: `Employee Portal`,
         link: `/employeePortal`,
     },
-    {
-        title: `Careers`,
-        link: `/3Dcareers`,
-    },
+   
 ]
