@@ -11,6 +11,8 @@ import Services from "./components/Services";
 import SignIn from "./components/SignIn";
 import EmployeeSignIn from "./components/EmployeeSignIn";
 import { IoArrowUpSharp } from "react-icons/io5";
+import ProtectedEmployee from "./components/Protected";
+import EmployeeDashboard from "./components/EmployeeDashboard";
 
 function App() {
     window.onbeforeunload = function () {
@@ -47,6 +49,11 @@ function App() {
                 <Route exact path="/employeePortal">
                     <EmployeeSignIn />
                 </Route>
+                <ProtectedEmployee
+                    component={EmployeeDashboard}
+                    exact
+                    path="/employee-dash"
+                ></ProtectedEmployee>
             </Switch>
             <IoArrowUpSharp
                 className="scrollIcon"

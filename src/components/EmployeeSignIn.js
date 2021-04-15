@@ -7,9 +7,9 @@ import {
 } from "../styles/employeePortal/employeePortal";
 import image from "../images/Untitled.png";
 import { PortalLogo } from "../styles/employeePortal/employeePortal";
-import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { Button } from "./Button";
+import { AuthAxios } from "../util/AuthAxios";
 
 const EmployeeSignIn = () => {
     const history = useHistory();
@@ -26,20 +26,15 @@ const EmployeeSignIn = () => {
         });
     };
 
-    // AXIOS WITH AUTH NEEDED
-
-    const loginFunc = async (values) => {
-        console.log("credentials", values);
-        const res = await axios.post(
-            "http://localhost:5432/employee/login",
-            values
-        );
-        if (res) {
-            console.log(res);
-            
-        } else {
-            console.log("nope");
-        }
+    const loginFunc = (values) => {
+        AuthAxios()
+            .post("/employee/login", values)
+            .then((res) => {
+                console.log(res, "yay");
+                localStorage.setItem("token", res.data.token);
+                history.push("/employee-dash");
+            })
+            .catch((err) => console.log(err));
     };
     return (
         <EmployeeSignInSection>
