@@ -15,10 +15,11 @@ export const FooterContent = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+   
     p {
         font-size:0.6rem;
         margin-top:30px;
+        
         
         @media screen and (max-width: 768px) {
             margin-left: 44%;

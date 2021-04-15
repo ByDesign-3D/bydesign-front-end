@@ -23,7 +23,7 @@ const Footer = () => {
                         );
                     })}
                 </FooterMenu>
-                <p style={{ color: "white",marginRight:"250px" }}>&#169; 3D ByDesign</p>
+                <p style={{ color: "white",marginRight:"160px" }}>&#169; 3D ByDesign</p>
                 <FooterMenu>
                     <a href="https://facebook.com">
                         <FaFacebookSquare
