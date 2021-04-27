@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     EmployeeForm,
     EmployeeInput,
@@ -13,6 +13,10 @@ import { AuthAxios } from "../util/AuthAxios";
 
 const EmployeeSignIn = () => {
     const history = useHistory();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
     const [credentials, setCredentials] = useState({
         username: "",
         password: "",
