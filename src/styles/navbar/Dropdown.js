@@ -7,7 +7,17 @@ export const DropdownContainer = styled.div`
     z-index: 100;
     width: 100%;
     height: 60%;
-    background: red;
+    background: #8e0e00; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #1f1c18,
+        #8e0e00
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #1f1c18,
+        #8e0e00
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +42,8 @@ export const Icon = styled.div`
     }
 `;
 export const CloseIcon = styled(FaTimes)`
-    color: #fff;
-    box-shadow: 1px 1px 2px black;
+    color: black;
+    box-shadow:  0 5px black;
 `;
 export const DropdownContent = styled.div`
     height: 100%;
@@ -48,5 +58,8 @@ export const DropMenu = styled.div`
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    height: 30%;
+    height: 50%;
+    a{
+        font-weight:600;
+    }
 `;

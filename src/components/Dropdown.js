@@ -25,6 +25,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                                 big="true"
                                 to={item.link}
                                 key={idx}
+                                style = {{borderBottom:"3px solid black",borderRadius:"10%",alignItems:"space-between"}}
                             >
                                 {item.title}
                             </MenuLinks>

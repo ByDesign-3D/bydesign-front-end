@@ -11,10 +11,6 @@ export const menuData = [
         title: `Contact`,
         link: `/contact`,
     },
-    {
-        title: `Employee Portal`,
-        link: `/employeePortal`,
-    },
 ];
 
 export const footerMenu = [
@@ -34,20 +30,19 @@ export const footerMenu = [
         title: `Employee Portal`,
         link: `/employeePortal`,
     },
-   
-]
+];
 
 export const dropdownData = [
     {
-      title: `Home`,
-      link: `/`,
+        title: `About`,
+        link: `/about`,
     },
     {
-      title: `Reviews`,
-      link: `/reviews`,
+        title: `Services`,
+        link: `/services`,
     },
     {
-      title: `Critics`,
-      link: `/critics`,
+        title: `Employee Portal`,
+        link: `/employeePortal`,
     },
-  ]
+];

@@ -54,6 +54,7 @@ export const EmployeeForm = styled.form`
     padding: 40px;
     background-color: #fff;
     border-radius: 10px;
+    border:3px solid black;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -62,7 +63,7 @@ export const EmployeeForm = styled.form`
         font-weight: 600;
     }
     @media screen and (max-width: 768px) {
-        width: 200px;
+        width: 90%;
     }
 `;
 
