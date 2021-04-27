@@ -6,14 +6,14 @@ import { IoMenu } from "react-icons/io5";
 import image from "../images/temp_logo4.png";
 import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function Navbar({toggle}) {
     return (
         <div>
             <Nav>
                 <NavLink to="/">
                     <Logo src={image} />
                 </NavLink>
-                <MenuBars>
+                <MenuBars onClick={toggle}>
                     <IoMenu style={{ color: "white" }} />
                 </MenuBars>
                 <NavMenu>

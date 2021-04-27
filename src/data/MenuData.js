@@ -36,3 +36,18 @@ export const footerMenu = [
     },
    
 ]
+
+export const dropdownData = [
+    {
+      title: `Home`,
+      link: `/`,
+    },
+    {
+      title: `Reviews`,
+      link: `/reviews`,
+    },
+    {
+      title: `Critics`,
+      link: `/critics`,
+    },
+  ]

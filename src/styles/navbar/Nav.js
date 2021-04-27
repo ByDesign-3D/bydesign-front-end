@@ -43,7 +43,7 @@ export const NavMenu = styled.div`
 `;
 
 export const MenuLinks = styled(Link)`
-    font-weight: bold;
+    font-weight: 500;
     color: ${({ primary }) => (primary ? "white" : "black")};
     font-size: 1rem;
     display: flex;

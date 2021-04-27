@@ -13,12 +13,13 @@ import EmployeeSignIn from "./components/EmployeeSignIn";
 import { IoArrowUpSharp } from "react-icons/io5";
 import ProtectedEmployee from "./components/Protected";
 import EmployeeDashboard from "./components/EmployeeDashboard";
+import Dropdown from "./components/Dropdown";
 
 function App() {
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
     };
-
+    // CODE FOR DROPDOWN NAV
     const [isOpen, setIsOpen] = useState(false);
     const [showScroll, setShowScroll] = useState(false);
 
@@ -30,11 +31,16 @@ function App() {
         }
     };
 
+    const dropdownToggle = () => {
+        setIsOpen(!isOpen);
+    };
+
     window.addEventListener("scroll", checkScrollPosition);
     return (
         <div className="App">
             <GlobalStyle />
-            <Navbar />
+            <Navbar toggle = {dropdownToggle}/>
+            <Dropdown toggle = {dropdownToggle} isOpen={isOpen}/>
             <Switch>
                 <Route exact path="/">
                     <ImageSlider slides={SliderData} />

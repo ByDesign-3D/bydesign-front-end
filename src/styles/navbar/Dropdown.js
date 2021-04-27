@@ -7,7 +7,7 @@ export const DropdownContainer = styled.div`
     z-index: 100;
     width: 100%;
     height: 60%;
-    background: #e1ded5;
+    background: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +32,7 @@ export const Icon = styled.div`
     }
 `;
 export const CloseIcon = styled(FaTimes)`
-    color: #587fc3;
+    color: #fff;
     box-shadow: 1px 1px 2px black;
 `;
 export const DropdownContent = styled.div`
